@@ -2,6 +2,10 @@
 Andrew M. Gerstner
 Samuel Naeger
 Scott Murrell
-School Database for 3380 Spring 2018
+Chlotte Crim
+Clark Stith
+
+Engineering School Database for 3380 Spring 2018
   -Students Table
   -Courses Table
+  -Instructors Table
