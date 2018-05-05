@@ -1,5 +1,5 @@
 <?php
-//make the html page itself
+//mainHTML
 function genHTML($title, $body, $stylesheet) {
 	$html = <<<EOT
 <!DOCTYPE html>
@@ -22,13 +22,13 @@ $body
 EOT;
 	return $html;
 }
-//redirects to sent URL
+//redirect
 function redirect($url, $statusCode = 303)
 {
    header('Location: ' . $url, true, $statusCode);
    die();
 }
-//error page html util
+//errorPageHtml 
 function generateErrorPage($error) {
 	$html = <<<EOT
 <h1>Stats</h1>
