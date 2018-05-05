@@ -9,7 +9,7 @@
         print genHTML("Update Game (Error)", generateErrorPage($message), $stylesheet);
         exit;
     }
-//gets game data through POST
+//send game data to POST
 	$vopponent = $_POST['Opponent'] ? $_POST['Opponent'] : "untitled";
     $vscore = $_POST['Score'] ? $_POST['Score'] : "untitled";
     $vopponentScore = $_POST['VersingScore'] ? $_POST['VersingScore'] : "untitled";
@@ -21,7 +21,7 @@
 			$mysqli = new mysqli($host, $user, $password, $db);
 			// Check connection
 			if ($mysqli->connect_error) {
-				print genHTML("Stats (Error)", generateErrorPage($mysqli->connect_error), $stylesheet);
+				print genHTML("Game (Error)", generateErrorPage($mysqli->connect_error), $stylesheet);
 		        exit;
 			} else {
                 //escapes data to prevent injection
@@ -33,11 +33,11 @@
                 $homeOrAway = $mysqli->real_escape_string($vhomeOrAway);
                 $regularOrPostSeason = $mysqli->real_escape_string($vregularOrPostSeason);
 				$sql = "UPDATE Games SET Versing='$opponent', CardScore='$score', VersingScore='$opponentScore', matchDate='$date', win='$winOrLose', homeTeam='$homeOrAway', season='$regularOrPostSeason' WHERE id = $id";
-                //sends sql query
+                //send query
 				if ( $result = $mysqli->query($sql) ) {
 					redirect("index.php");
 				} else {
-                    //error page if query fails
+                    //error page if fails
 					print genHTML("Update Game (Error)", generateErrorPage($conn->error . " using SQL: $sql"), $stylesheet);
                     
                     echo $opponent. " " . $score. " " . $opponentScore. " " . $date. " " . $winOrLose. " " . $homeOrAway. " " . $regularOrPostSeason. " " . $id ;
