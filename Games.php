@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+//games landing page
 <html>
 <head>
 <title>Add Game</title>
