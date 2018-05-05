@@ -1,13 +1,11 @@
 <?php
-	//Add stat gets its data from stat_Form.php From there it takes the data and stores it in variables that are then set up with the
-    //the real escape string to avoid SQL injection attacks. The variable from the real escape string is the inserted into the GAMES table.
-    //if the insertion is succesful it redirects back to index.php.
+	
     require ('Access.php');
 	require ('webFunctions.php');
     
 	$stylesheet = 'CardinalsStats.css';
     
-//taking data that is sent from stat_Form.php and storing in a variable
+//taking data that is sent from gameForm.php and storing in a variable
 	$varopponent = $_POST['Versing'] ? $_POST['Versing'] : "untitled";
     $varscore = $_POST['CardScore'] ? $_POST['CardScore'] : "untitled";
     $varopponentScore = $_POST['VersingScore'] ? $_POST['VersingScore'] : "untitled";
