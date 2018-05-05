@@ -14,7 +14,7 @@
     $Number = $_POST['Number'];
     $Name = $_POST['Name'];
     
-    
+    //connect
     
             
     $mysqli = new mysqli($host, $user, $password, $db);
