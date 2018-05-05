@@ -10,7 +10,7 @@ if($sqliConnection->connect_error){
     echo genHTML("Stats (Error)", "<p> Connection failed: " . $sqliConnection->connect_error . "</p>", $stylesheet);
 }
 
-//gets info from Games
+///gets info from Games
 
 $query = "SELECT * FROM Games";
 $result = $sqliConnection->query($query);
