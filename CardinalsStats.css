@@ -4,10 +4,11 @@ h1 {
 
 table, th, td {
 	
-	border-collapse: collapse;
-    border: 2px solid black;
-    padding: 10px;
-    font-size: 15px;
+border-collapse: collapse;
+border: 2px solid black;
+padding: 10px;
+font-size: 15px;
+	
 }
 tr:nth-child(even) {
 background-color: gray;
@@ -26,18 +27,20 @@ th {
 p{
 color: white;
 }
+
 body {
-	margin: 10px;
-	background: url(Cardinal.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-color: black;
-    background-position: fixed;    
-	font-family: arial;
+margin: 10px;
+background: url(Cardinal.jpg) no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+background-size: cover;
+background-color: black;
+background-position: fixed;    
+font-family: arial;
 }
-a.statButton:link, a.statButton:visited, a.statButton:active {
+
+a.gameButton:link, a.gameButton:visited, a.gameButton:active {
 	color: black;
 	font-size: 1.2em;
 	text-decoration: none;
@@ -46,10 +49,10 @@ a.statButton:link, a.statButton:visited, a.statButton:active {
 	border: 1px solid black;
 }
 
-a.statButton:hover {
-	background-color: gray;
+a.gameButton:hover {
+background-color: gray;
 }
 
-#form1 {
+#form1{
 	padding: 5px;
 }
