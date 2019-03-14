@@ -1,9 +1,6 @@
 # 3380FinalProject
 Andrew M. Gerstner
-Samuel Naeger
-Scott Murrell
-Chlotte Crim
-Clark Stith
+
 
 Baseball Game Database for STL cardinals
 -players table
