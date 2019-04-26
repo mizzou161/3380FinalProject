@@ -1,5 +1,8 @@
 # 3380FinalProject
 Andrew M. Gerstner
+Scott Murrell
+Chlotte
+Clarkston Stith
 
 
 Baseball Game Database for STL cardinals
